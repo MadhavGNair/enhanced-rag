@@ -6,11 +6,29 @@ authors = [
     {name = "Madhav Girish Nair",email = "44905647+MadhavGNair@users.noreply.github.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 dependencies = [
+    "langchain[google-genai] (>=0.3.24,<0.4.0)",
+    "langchain[openai] (>=0.3.24,<0.4.0)",
+    "langchain[anthropic] (>=0.3.24,<0.4.0)",
+    "langchain-text-splitters (>=0.3.8,<0.4.0)",
+    "langchain-community (>=0.3.22,<0.4.0)",
+    "langgraph (>=0.3.34,<0.4.0)",
+    "pypdf (>=5.4.0,<6.0.0)",
+    "black (>=25.1.0,<26.0.0)",
+    "isort (>=6.0.1,<7.0.0)",
+    "langchain-google-vertexai (>=2.0.21,<3.0.0)",
+    "langchain-chroma (>=0.2.3,<0.3.0)",
+    "langchain-openai (>=0.3.14,<0.4.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+opentelemetry-proto = "^1.32.1"
+opentelemetry-sdk = "^1.32.1"
+opentelemetry-exporter-otlp-proto-grpc = "^1.32.1"
+
