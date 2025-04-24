@@ -20,3 +20,5 @@ Two datasets will be used to evaluate the aforementioned conditions, namely
 
 1. [NEPAQuAD1.0](https://www.kaggle.com/competitions/llm-for-environmental-review/data) - a dataset of Q&A pairs from the NEPA documents. Contains *context*, which is the passage relevant to the question, *question*, which is the query, and *ground truth answer*, which is the correct answer to the query.
 2. [PromiseEval](https://drive.google.com/drive/folders/1wWwo5DBY2qFj2KSEqjkjinuK5CB5ku5K) - a dataset of promises that has been found in company reports. These promises were hand-extracted to fall into one of the ESG pillars. Contains *url* to PDF, *data*, which is the passage, and *promise status*, which is a boolean that indicates whether the passage has a promise or not. These promises can be cross-checked with factors or query from sustainability reports to be used as ground truth for testing. So this dataset requries additional processing in order to work with the pipeline of this research.
+
+NOTE: the data within the datasets where not collected or altered by me.
