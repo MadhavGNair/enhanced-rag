@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-from langchain_google_vertexai import ChatVertexAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -25,11 +25,11 @@ class VanillaRAG:
         elif parent_model == 'anthropic':
             self.model_name = model_name
             self.api_key = api_key
-            self.llm = ChatAnthropic(model_name=self.model_name, api_key=self.api_key)
+            self.llm = ChatAnthropic(model=self.model_name, api_key=self.api_key)
         elif parent_model == 'gemini':
             self.model_name = model_name
             self.api_key = api_key
-            self.llm = ChatVertexAI(model_name=self.model_name, api_key=self.api_key)
+            self.llm = ChatGoogleGenerativeAI(model=self.model_name, api_key=self.api_key)
         else:
             raise ValueError(f"Invalid parent model: {parent_model}")
 
@@ -39,15 +39,30 @@ class VanillaRAG:
         """
 
     def __generate_embeddings(self):
+        """
+        Generate embeddings for the documents.
+
+        Returns:
+            vector_store.as_retriever(): A retriever object that can be used to retrieve documents from the vector store.
+        """
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         chunks = text_splitter.split_documents(self.docs)
         vector_store = Chroma.from_documents(
             documents=chunks,
             embedding=OpenAIEmbeddings(model="text-embedding-3-small"),
         )
-        return vector_store.as_retriever()
+        return vector_store.as_retriever(serach_type="similarity", search_kwargs={'k': 1})
 
     def query(self, query: str):
+        """
+        Query the RAG model.
+
+        Args:
+            query (str): The query to answer.
+
+        Returns:
+            chain.invoke({"input": query}): The answer to the query.
+        """
         retriever = self.__generate_embeddings()
         prompt = ChatPromptTemplate.from_messages([
             ("system", self.system_prompt),

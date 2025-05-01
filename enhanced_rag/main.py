@@ -8,21 +8,36 @@ from enhanced_rag import EnhancedRAG
 
 load_dotenv()
 
-model_choices = ['openai', 'anthropic', 'gemini']
+parent_model_choices = ['openai', 'anthropic', 'gemini']
+model_choices = ['gpt-4.1-mini', 'claude-3-5-sonnet-20240620', 'gemini-2.0-flash']
+api_keys = [os.getenv('OPENAI_API_KEY'), os.getenv('CLAUDE_API_KEY'), os.getenv('GEMINI_API_KEY')]
 
-vanilla_rag = VanillaRAG('tests/1682954_thesis_proposal.pdf', 'gpt-4o-mini', os.getenv('OPENAI_API_KEY'), model_choices[0])
+MODEL_CHOICE = 0
+PDF_PATH = 'tests/1682954_thesis_proposal.pdf'
+QUERY = 'Who is the first supervisor of the thesis?'
 
-results = vanilla_rag.query('What is name of the author of the thesis?')
+# # vanilla-RAG
+def vanilla_rag(pdf_path: str, query: str):
+    vanilla_rag = VanillaRAG(pdf_path, model_choices[MODEL_CHOICE], api_keys[MODEL_CHOICE], parent_model_choices[MODEL_CHOICE])
 
+    results = vanilla_rag.query(query)
 
-print(results["context"][0].page_content)
+    print('=' * 100)
+    for context in results["context"]:
+        print(f"\nSource page number: {context.metadata['page']}")
+        print(context.page_content)
+        print('=' * 100)
 
-print('-' * 100)
-print('\n\n')
+    print(f"Answer:\n{results['answer']}")
 
-print(results["context"][0].metadata)
+# long-context-RAG
+def long_context_rag(pdf_path: str, query: str):
+    long_context_rag = LongContext(pdf_path, model_choices[MODEL_CHOICE], api_keys[MODEL_CHOICE], parent_model_choices[MODEL_CHOICE])
 
-print('-' * 100)
-print('\n\n')
+    results = long_context_rag.query(query)
 
-print(results['answer'])
+    print('=' * 100)
+    print(results)
+    print('=' * 100)
+
+    print(f"\n\nAnswer:\n{results.content}")
