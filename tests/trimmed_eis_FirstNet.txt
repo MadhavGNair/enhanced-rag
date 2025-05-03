@@ -1,0 +1,487 @@
+Page 1:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-3 
+ES-1. INTRODUCTION 
+Title VI of the Middle Class Tax Relief and Job Creation Act of 2012 (Public Law [Pub. L.] 
+No. 112-96, Title VI, 126 Statute [Stat.] 156 (codified at 47 United States Code [U.S.C.] § 1401 
+et seq.)) (the Act) created and authorized the First Responder Network Authority (FirstNet) to 
+ensure the establishment of a nationwide public safety broadband network (NPSBN) based on a 
+single, national network architecture (47 U.S.C. § 1422(b)).  FirstNet is an independent authority 
+within the U.S. Department of Commerce’s National Telecommunications and Information 
+Administration (NTIA). 
+The NPSBN (i.e., the Proposed Action) is intended to cover all 50 states, five territories, and the 
+District.  FirstNet has developed a series of five Final Programmatic Environmental Impact 
+Statement (PEIS) documents, one for each of five geographic regions across the United States.  
+This Final PEIS fulfills the requirements of the National Environmental Policy Act (NEPA) for 
+the NPSBN for the South Region, which is composed of Alabama, Arkansas, Florida, Georgia, 
+Kentucky, Louisiana, Mississippi, New Mexico, North Carolina, Oklahoma, South Carolina, 
+Tennessee, and Texas. 
+ES-1.1 FIRSTNET AND THE NEPA PROCESS 
+The design, deployment, and operation of the NPSBN is a broad action with nationwide 
+implications.  As a result, FirstNet has assessed potential impacts expected from the Proposed 
+Action from the program as a whole.  As part of a tiered approach to NEPA (see NEPA 
+§1502.20), this Final PEIS also supports any subsequent site-specific environmental analyses 
+that may be required for individual actions for specific projects at specific locations, once they 
+are identified. 
+ES-1.2 FEDERAL AGENCY PARTICIPATION 
+FirstNet is the lead agency for the environmental review consistent with NEPA, and the 
+consultation requirements of the National Historic Preservation Act (NHPA) Section 106 and the 
+Endangered Species Act Section 7.  As the lead agency, FirstNet coordinates with cooperating 
+agencies to ensure compliance with the laws, regulations, and Executive Orders (EOs) discussed 
+in Section 1.8, Overview of Relevant Laws and Executive Orders. 
+In letters dated January 16, 2015, FirstNet invited 37 federal agencies to participate in the 
+development of the PEIS as cooperating agencies.  Nine agencies accepted the invitation: the 
+NTIA, the Federal Communications Commission; the General Services Administration; the U.S. 
+Department of Agriculture’s (USDA) Rural Utilities Service; the USDA’s U.S. Forest Service; 
+the USDA’s Natural Resources Conservation Service; the U.S. Air Force; the U.S. Department 
+of Energy; and the U.S. Department of Homeland Security, which includes the Federal 
+Emergency Management Agency, the U.S. Coast Guard, and the U.S. Customs and Border 
+Protection.  Appendix A contains a complete list of those agencies invited to become cooperating 
+agencies.
+
+Page 2:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-4 
+In a letter dated April 29, 2015, FirstNet invited all 56 state-level Single Points of Contact 
+(SPOCs) to be consulting parties on the development of the PEISs to promote transparency and 
+partnership.  As of the date of publication, 15 SPOCs have accepted the invitation, which 
+afforded them the opportunity to review and comment on draft documents prior to public release. 
+ES-1.3 PUBLIC ENGAGEMENT AND TRIBAL CONSULTATION 
+Public comments on the Proposed Action have been and are being solicited as part of the NEPA 
+process.  In addition, in response to its obligations under the NHPA, FirstNet has initiated 
+consultations with the Advisory Council on Historic Preservation, State Historic Preservation 
+Offices, federally recognized Native American tribes, and Native Hawaiian organizations.  
+FirstNet anticipates consulting with Pacific Islanders on American Samoa, Guam, and the 
+Northern Marina Islands as well as communities in Puerto Rico and the U.S. Virgin Islands. 
+In a letter dated January 30, 2015, FirstNet contacted tribal leaders and Tribal Historic 
+Preservation Officers, where applicable, to initiate formal, government-to-government 
+consultation with all 566 federally recognized Native American tribes.  In a subsequent letter 
+dated May 15, 2015, FirstNet initiated consultation with 17 Native Hawaiian Organizations. 
+The process for soliciting public comments on the Draft PEIS has primarily been achieved 
+through the NEPA-mandated scoping processes (as described in Section 1.7.2, Scoping and 
+Section 1.7.3, Draft PEIS Comment Period).  Public engagement via the scoping process began 
+with publication of a Notice of Intent (NOI) in the Federal Register (FR) to prepare five 
+coordinated PEISs (79 Federal Register 67156, [November 12, 2014]).  The NOI initiated a 45-
+day public comment period, during which FirstNet received input from interested parties.   
+Following the publication of the NOI, FirstNet held a series of public scoping meetings where 
+participants had the opportunity to learn about the Proposed Action, talk directly with FirstNet 
+environmental staff, and provide input regarding the scope and analysis of the Proposed Action.  
+The public scoping meetings were held in the following locations:  
+• Washington, DC: Tuesday, November 25, 2014 (4:00 – 8:00 p.m.) 
+• Honolulu, HI: Tuesday, December 2, 2014 (4:00 – 8:00 p.m.) 
+• San Francisco, CA: Thursday, December 4, 2014 (4:00 – 8:00 p.m.) 
+• Tucson, AZ: Thursday, December 4, 2014 (4:00 – 8:00 p.m.)   
+• Kansas City, MO: Tuesday, December 9, 2014 (4:00 – 8:00 p.m.)  
+• New Orleans, LA: Thursday, December 11, 2014 (5:00 – 9:00 p.m.) 
+• New York City, NY: Monday, December 15, 2014 (4:00 – 8:00 p.m.) 
+The Scoping Summary Report may be found in Appendix B.  The following major items were 
+identified during the scoping comment period and in public meetings: 
+• Potential impacts of the NPSBN on sensitive natural resources; 
+• Concerns regarding the impacts of tower placement on culturally and ecologically sensitive 
+areas, such as Tumamoc Hill in Tucson, AZ; and 
+• The impact of the NPSBN on existing public safety communications infrastructure and 
+operations.
+
+Page 3:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-5 
+FirstNet continued to accept comments after the close of the formal scoping period to allow the 
+public as many opportunities as possible to provide input.  Additional comments were received 
+on the topics mentioned above, as well as on the topic of potential impacts of radio frequency 
+(RF) emissions.  
+The Draft PEIS for the South Region was released on October 14, 2016 for a 60-day public 
+comment period, via an announcement in the Federal Register (81 FR 71044) (Federal Register, 
+2016).  During the comment period, FirstNet held a series of public meetings to provide the 
+general public and interested stakeholders with an opportunity to learn about the PEIS, ask 
+questions, and provide comments.  Meetings were held on the following dates and locations:  
+• Nashville, Tennessee: October 24, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Atlanta, Georgia: October 25, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Frankfort, Kentucky: October 25, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Morrisville (Raleigh Area), North Carolina: October 26, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Montgomery, Alabama: October 26, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Orlando, Florida: October 27, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Columbia, South Carolina: October 27, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Baton Rouge, Louisiana: November 1, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Sante Fe, New Mexico: November 1, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Jackson Mississippi: November 2, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Little Rock, Arkansas: November 3, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Oklahoma City, Oklahoma: November 3, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Austin, Texas: November 7, 2016, from 4:00 p.m. to 8:00 p.m. 
+• Dallas, Texas: November 9, 2016, from 4:00 p.m. to 8:00 p.m. 
+Comments received focused primarily on issues such as potential impacts of radio frequency 
+(RF) emissions, best management practices (BMPs), climate change impact assessment 
+guidelines, vibration impacts, requests for consultation, and legal questions surrounding 
+FirstNet’s network deployment procedures and future environmental compliance requirements. 
+Appendix F details the comments received on the Draft PEIS and FirstNet’s responses.  Note 
+that some comments arrived after the Final PEIS for the South Region was finalized.  Those 
+additional comments and FirstNet’s responses can be found on an Errata Sheet located 
+immediately before Chapter 1.  
+ES-2. PURPOSE OF AND NEED FOR THE FIRSTNET PROPOSED 
+ACTION 
+The Act meets a long-standing and critical national infrastructure need to create a NPSBN that 
+would, for the first time, allow police officers, firefighters, emergency medical service 
+professionals, and other public safety officials to effectively communicate with each other across 
+agencies and jurisdictions.
+
+Page 4:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-6 
+ES-2.1 PURPOSE OF THE FIRSTNET PROPOSED ACTION 
+The purpose of the Proposed Action is to design, deploy, and operate the NPSBN—a dedicated 
+public safety communications network to provide first responders with the tools they need to do 
+their jobs more effectively and to minimize the loss of life in the event of any future natural or 
+manmade emergencies or disasters.  
+The NPSBN intends to facilitate the use of rugged, easy-to-use devices and provide a set of 
+applications and services on a single, interoperable platform built to open, non-proprietary, 
+commercially available standards for emergency and daily public safety communications.  These 
+applications and services are expected to enhance the ability of the public safety community to 
+perform more reliably, effectively, and safely.  The NPSBN intends to also provide a backbone 
+to allow for improved communications by carrying high-speed data, location information, 
+images, and, eventually, streaming video.  This capability is expected to increase situational 
+awareness during emergencies, thereby improving the ability of the public safety community to 
+effectively engage and respond.   
+The FirstNet network intends to be “hardened” in terms of physical structure, user access, and 
+cyber security considerations.  These efforts would be designed not only to ensure that the 
+network has greater resistance to system failure than what is currently available, but also that it 
+can recover more rapidly should failure occur at any point in the system.  The goal would be to 
+provide not only interoperability, but also improved operability in the event of a natural or 
+manmade disaster.  The network operating standards are expected to also provide local control to 
+public safety agencies, allowing for more control over the configuration, deployment, and 
+management of multiple types of Information Technology resources, referred to as provisioning, 
+as well as device features and reporting. 
+ES-2.2 NEED FOR THE FIRSTNET PROPOSED ACTION 
+The Proposed Action is needed to address existing deficiencies in public safety communications 
+interoperability, durability, and resiliency that have been highlighted in recent years for the ways 
+in which they have hindered response activities in high profile natural and manmade disasters.  
+Today, first responders rely on numerous separate, often incompatible, and often proprietary land 
+mobile radio networks.  This makes it difficult, and at times impossible, for emergency 
+responders from different jurisdictions to communicate, especially during major emergencies 
+that require a multi-jurisdictional response (National Task Force on Interoperability, 2005).  
+The lack of interoperability in public safety communications and the hazards associated with it 
+have been known within the public safety community and the telecommunications industry for 
+quite some time.  A 1996 report on the state of public safety wireless communications identified 
+interoperability issues that hampered emergency response activities in the 1993 World Trade 
+Center bombing in New York City and the 1995 bombing of the Alfred P. Murrah Federal 
+Building in Oklahoma City (Public Safety Wireless Advisory Committee, 1996).
+
+Page 5:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-7 
+Interoperability problems arose again during the terrorist attacks of September 11, 2001, the 
+event that marks the true genesis of the NPSBN.  As numerous onsite reports from public safety 
+personnel at the World Trade Center, the Pentagon, and Somerset County, Pennsylvania, 
+indicated, the lack of interoperable and resilient communications capability among the multiple 
+police, fire, and emergency medical services personnel hampered rescue efforts and in many 
+cases likely led to an increased loss of life, both among members of the public, as well as within 
+the first responder community itself.  Indeed, hundreds of police officers and fire fighters, 
+including off-duty personnel who reported to the scene to engage in rescue efforts upon learning 
+of the events that were unfolding, lost their lives in the line of duty; this amounted to the largest 
+loss of first responders in a single event anywhere in U.S. history (National Commission on 
+Terrorist Attacks upon the United States, 2004). 
+Subsequent disasters, such as Hurricane Katrina in 2005 and Hurricane Sandy in 2013, have 
+shown that public safety response is still often compromised by an inability of public safety to 
+communicate with each other due to radio systems operating on different, incompatible 
+frequencies.  This is largely the result of the fragmented initial design and upgrades of public 
+safety communications that were often planned and executed at the local level.  These disasters, 
+along with the preceding terrorist events, demonstrated that the nation lacked an overarching 
+plan to connect all first responders under one dedicated interoperable system. 
+ES-3. THE PROPOSED ACTION AND ALTERNATIVES  
+The Proposed Action would encompass the design, deployment, and operation of the NPSBN by 
+FirstNet and/or a partner organization(s).  By statute, the network must have several 
+characteristics, including: 
+• Security, resiliency, backwards compatibility with existing commercial networks, integration 
+with public safety answering points1 or their equivalents; 
+• Substantial rural coverage;  
+• Deployment that adheres to open, non-proprietary, commercially available standards; and  
+• Use of existing infrastructure to the maximum extent economically desirable. 
+The FirstNet network would have two components: the core network and the radio access 
+network (RAN).  The core network is a key component for ensuring that users have a single 
+interoperable platform nationwide, and would consist of a wide range of telecommunications 
+infrastructure including fiber optic cable, towers, data centers, microwave technology, and 
+others.  The RAN would consist of all radio base station infrastructure that would connect user 
+devices. 
+FirstNet intends to also maintain and improve the NPSBN to account for new and evolving 
+technologies.  In particular, the FirstNet network would be based on the minimum technical 
+requirements on the commercial standards for Long Term Evolution (LTE) service, an 
+upgradeable technology now in its fourth generation (4G).  
+                                                 
+1 Public safety answering points are call centers responsible for answering calls to an emergency telephone number for police, 
+fire, and emergency medical services.
+
+Page 6:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-8 
+In accordance with NEPA, FirstNet must examine a range of reasonable alternatives to design, 
+construct, and operate the NPSBN.  These alternatives must be reasonable ways in which 
+FirstNet could meet the purpose and need for the Proposed Action.  In addition to the range of 
+reasonable alternatives, FirstNet is also required to “include the alternative of no action” as part 
+of the alternatives analysis in the PEIS.  The “No Action Alternative” describes what would 
+happen if FirstNet did not construct the NPSBN, and is used as a baseline against which the 
+potential impacts of the action alternatives can be compared (see NEPA §1502.14). 
+In addition to the alternatives described below, other alternatives were considered but not carried 
+forward.  Those alternatives are discussed in Section 2.3 of the Final PEIS, Alternatives 
+Considered but not Carried Forward. 
+ES-3.1 PREFERRED ALTERNATIVE 
+Under the Preferred Alternative, FirstNet and/or its partners would construct a nationwide 
+broadband LTE network using a combination of the wired, wireless, deployable, and satellite 
+technologies.  There is currently a wide range of technologies that FirstNet may use to 
+implement and deploy the NPSBN.  Table ES3-1 summarizes the types of wired, wireless, and 
+deployable projects that FirstNet may consider.  Further details on NPSBN projects are provided 
+in Section 2.1.2, Proposed Action Infrastructure. 
+Table ES3-1: Proposed Action Infrastructure Types 
+Project Type Description 
+Wired Projects 
+New Build – Buried Fiber 
+Optic Plant 
+Plowing or trenching cable and/or cable conduit within public or (where 
+necessary) private road, utility, or other rights-of-way (ROWs) or easements, 
+along with new points of presence (POPs)a, huts, or other facilities.   
+Use of Existing Conduit – 
+New Buried Fiber Optic 
+Plant 
+Installation of new fiber optic cable in existing, buried conduit.  Ground 
+disturbance would usually be limited to existing conduit entry and exit points.   
+New Build – Aerial Fiber 
+Optic Plant 
+Installation of new poles with new cables in previously disturbed or new ROWs 
+or easements, or installing replacement poles in an existing ROW.  Deployment 
+may include new access roads, POPs, huts, or other facilities to house plant 
+equipment.   
+Collocation on Existing 
+Aerial Fiber Optic Plant 
+Installation of new fiber optic cable on existing poles.  This may require 
+structural hardening or reinforcement, and/or pole replacement.   
+Use of Existing Buried or 
+Aerial Fiber Optic Plant or 
+Existing Submarine Cable 
+Activation of existing unused (dark) fiber.  Deployment may require the 
+installation of new equipment, usually in existing equipment huts.   
+New Build – Submarine 
+Fiber Optic Plant 
+Installation of sealed cables in limited near-shore or inland bodies of water, along 
+with new onshore landings and facilities to accept cable, which are typically 
+buried close to shore. 
+Installation of Optical 
+Transmission or Centralized 
+Transmission Equipment 
+Installation of equipment as part of the core network deployment.  This 
+equipment is usually installed in small boxes or huts in the ROW of the utility 
+corridor, and may involve construction of access roads.
+
+Page 7:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-9 
+Wireless Projects 
+New Wireless 
+Communication Towers 
+Installation of new towers, antennas, and/or microwave dishes to support 
+wireless infrastructure, along with generators, equipment sheds, fencing, lighting, 
+electrical feeds, concrete foundations and pads, and/or access roads. 
+Collocation on Existing 
+Wireless Tower, Structure, or 
+Building 
+Mounting or installation of equipment such as antennas or microwave dishes on 
+existing towers, along with power units in some cases.  Existing towers, 
+structures, or buildings may require structural hardening or increased physical 
+security measures.   
+Deployable Technologies 
+(Technologies intended to provide service in areas where permanent, fixed infrastructure cannot or will not be 
+deployed) 
+Cell on Wheels (COW) 
+A cellular base station on a trailer with an expandable antenna mast, designed to 
+be part of a cellular network and augment existing capacity.  COWs typically 
+include a small generator and microwave or satellite link.   
+Cell on Light Truck (COLT) 
+A cellular base station on a light truck platform with an expandable antenna 
+mast, designed to be part of a cellular network and augment existing capacity.  
+COLTs typically contain a small generator and microwave or satellite link.   
+System on Wheels (SOW) 
+A full base station and controller on a large towable trailer or truck, with a large 
+antenna mast, suitable to address larger localized coverage or capacity shortages 
+in the event of large incidents.  A SOW can support an island system with no 
+need for satellite/microwave link back, and typically includes a generator. 
+Deployable Aerial 
+Communications 
+Architecture (DACA) 
+Aerial vehicles such as drones, piloted aircraft, weather balloons, and blimps 
+deployed at varying altitudes, capable of providing wide-area coverage, although 
+with relatively low capacity/throughput.  DACA would be generally used for 
+addressing wide-scale loss of coverage after a major catastrophic event.   
+Satellite Technologies 
+Satellite-Enabled Devices 
+and Equipment 
+Installation of permanent equipment on existing structures or the use of portable 
+devices that use satellite technology, such as satellite phones or video cameras.   
+Deployment of Satellites 
+FirstNet does not anticipate launching satellites as part of the deployment of the 
+NPSBN; however, it could include equipment on satellites that are already being 
+launched for other purposes. 
+a  POPs are connections or access points between two different networks, or different components of one network. 
+ES-3.2 DEPLOYABLE TECHNOLOGIES ALTERNATIVE 
+Under the Deployable Technologies Alternative, FirstNet would procure, deploy, and maintain a 
+nationwide fleet of mobile communications systems, including ground-based and aerial 
+deployable technologies, to provide temporary coverage in areas not covered by existing, usable 
+infrastructure.  This alternative is evaluated as a stand-alone alternative and would not involve 
+collocations of other equipment or construction of facilities, although some staging or landing 
+areas (depending on the type of technology) could require minor construction and maintenance 
+within public road ROWs and utility corridors, heavy equipment movement, and minor 
+excavation and paving near public roads.  Generally, these units would be deployed at times of 
+an incident to the affected area for either planned or unplanned incidents or events.  Equipment 
+would likely be stationed in every state and territory, often at multiple locations in each state or 
+territory, to facilitate rapid response.  These mobile communication units would be temporarily 
+installed and may use existing satellite, microwave, or radio systems for backhaul.
+
+Page 8:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-10 
+ES-3.3 NO ACTION ALTERNATIVE 
+Under the No Action Alternative, the NPSBN would not be constructed; there would be no 
+nationwide, coordinated system dedicated to public safety interoperable communications.  The 
+existing multiplicity of communications networks would remain in place, as would the current, 
+known limitations and problems of existing communication networks during times of emergency 
+or disaster.  This alternative would require an act of Congress to revise the Act, which currently 
+requires the NPSBN. 
+ES-4. SOUTH REGION – AFFECTED ENVIRONMENT 
+The FirstNet South Region is composed of 13 states: Alabama, Arkansas, Florida, Georgia, 
+Kentucky, Louisiana, Mississippi, New Mexico, North Carolina, Oklahoma, South Carolina, 
+Tennessee, and Texas.  As depicted in Figure ES4-1, the northern border of the South Region is 
+the Great Plains and Midwest states, as well as the East Region states.  The western border is 
+Arizona, the southern border is Mexico and the Gulf of Mexico, and the eastern border is the 
+Atlantic Ocean. 
+The South Region covers 26 percent of the U.S. landmass (U.S. Census Bureau, 2015a) and is 
+home to approximately 46 percent of the total U.S. population (U.S. Census Bureau, 2012) (U.S. 
+Census Bureau, 2015c).  Three of the 20 largest U.S. Metropolitan Statistical Areas are in this 
+region: Dallas-Fort Worth-Arlington, TX (#4), Houston-The Woodlands-Sugar Land, TX (#4), 
+Atlanta-Sandy Springs-Roswell, GA (#9).  These metropolitan areas have a total population of 
+approximately 19.4 million people, which is approximately 19 percent of the South Region and 6 
+percent of the total U.S. population (U.S. Census Bureau, 2015b).  Until the 1900’s most of the 
+economy of the South region was based on agriculture.  Following World War II, there were 
+large population shifts and industrialization and other development throughout the region 
+(Scranton, 2002). 
+Due to its topography and proximity to Atlantic Ocean and Gulf of Mexico, as well as extensive 
+development in floodplains and lowlands, the South Region is particularly susceptible to storm 
+events (including hurricanes) and flooding (Fenneman, N., 1916), which shapes the landscape 
+and presents risks to infrastructure and human health and safety.
+
+Page 9:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-11 
+ 
+Figure ES4-1: FirstNet PEIS Regions of Analysis 
+ES-5. POTENTIAL IMPACTS OF THE PREFERRED ALTERNATIVE 
+This Final PEIS contains 22 stand-alone chapters – one chapter for each state and other chapters 
+with analyses and additional information as required by NEPA.  Each state-specific chapter 
+discusses 15 separate resource areas, such as biological resources, water resources, land use, air 
+quality, etc.  For each resource area, the Final PEIS provides an overview of the Affected 
+Environment (i.e., existing conditions), and then discusses the potential impacts of the Preferred 
+Alternative in an Environmental Consequences section. 
+Through the programmatic approach, FirstNet has identified four categories of potential impacts 
+on the resource areas: 
+• Potentially significant; 
+• Less than significant with Best Management Practices (BMPs) and mitigation measures 
+incorporated; 
+• Less than significant; and 
+• No impact. 
+The specific methodology used to determine these impact levels and thresholds of significance is 
+provided for each resource within each state.  The sections below summarize in tabular form the 
+impact categories for each potential impact type, within each resource, and within each state.  
+For ease of reference, each impact category is assigned a color and a corresponding number, as 
+shown below: 
+1. Potentially significant 
+2. Less than significant with BMPs and mitigations measures incorporated 
+3. Less than significant 
+4. No impact 
+NA: Not Applicable.  White (no color) indicates resource not present in state(s)
+
+Page 10:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-12 
+The sections below discuss the potential impacts of the Preferred Alternative, focusing on 
+potential impacts and only certain proposed BMPs or mitigation measures, which are offered as 
+examples.  Potential impacts associated with the Deployable Technology Alternative are 
+discussed in Section ES-7.1 (below). The main body of the Final PEIS describes the potential 
+impacts in greater detail, as well as BMPs or mitigation measures that could be implemented by 
+FirstNet and/or its partners, as appropriate and feasible. 
+Please note that this impact analysis is “programmatic” which means it evaluates the potential 
+impacts over a broad area and does not evaluate the potential impacts associated with specific 
+sites or locations. In some cases, additional site-specific analysis may be required depending on 
+site conditions, the type of deployment, or any other permits or permissions necessary to perform 
+the work.  
+ES-5.1 INFRASTRUCTURE 
+Infrastructure consists of the systems and physical structures that enable a population in a 
+specified area to function.  Infrastructure is entirely manmade with a high correlation between 
+the type and extent of infrastructure and the degree to which an area is characterized as 
+“developed.”  Infrastructure includes a broad array of facilities such as utility systems, streets 
+and highways, railroads, airports, buildings and structures, ports, harbors, and other manmade 
+facilities.  Individuals, businesses, government entities, and virtually all relationships between 
+these groups depend on infrastructure for their most basic needs, as well as for critical and 
+advanced needs (e.g., emergency response, health care, and telecommunications).   
+This section describes potential impacts to infrastructure including transportation, 
+communications, and other utilities, associated with deployment and operation of the Preferred 
+Alternative, and discusses some BMPs and mitigation measures that could avoid or minimize 
+those potential impacts (see Table ES5-1).  Potential impacts associated with the Deployable 
+Technology Alternative are discussed in Section ES-7.1 (below). 
+Summary of Impacts 
+Deployment and operation of the Preferred Alternative could potentially impact transportation 
+system safety and capacity through the creation of traffic congestion or delay (e.g., lane 
+closures), or result in the increase in transportation incidents (e.g., crashes, derailments) due to 
+the transport of heavy equipment or deployment activities including plowing, directional boring, 
+and trenching along roadways and within the public road ROWs.  The presence of deployable 
+technologies such as COWs, COLTs, SOWs, and Deployable Aerial Communications 
+Architecture has the potential to impact air and land-based traffic congestion and safety.  
+Submarine deployment activities in limited near-shore or inland bodies of water additionally 
+have the potential to increase boat traffic and congestion on a short-term basis.  These potential 
+impacts to transportation capacity and safety would be less than significant, as they would likely 
+be short term, would be regionally based around the ongoing phase of deployment, and would 
+return to normal conditions after a few months or less.
+
+Page 11:
+Final Programmatic Environmental Impact Statement  South Region 
+FirstNet Nationwide Public Safety Broadband Network Executive Summary 
+August 2017 ES-13 
+While potential impacts to health care and emergency health care systems are not certain, if they 
+occurred as a result of deployment, these potential impacts would be localized, short-term, and 
+temporary and therefore less than significant.  Any potential localized or temporary access 
+restrictions to, or strains on, health care and emergency health services would likely improve 
+during the operations phase of the Preferred Alternative. 
+Effects on commercial telecommunication systems, communications, or level of service would 
+be less than significant due to deployment activities that could generate temporary and minor 
+disruptions to the current commercial telecommunications system.  Minor decreased level of 
+service could occur during deployment of the Preferred Alternative and during implementation 
+of deployable technologies.  Such deployment activities include plowing, directional boring, or 
+trenching during the installation of fiber optic cable, as well as construction of wireless towers, 
+structures, and buildings.  Potential impacts to underwater telecommunications infrastructure 
+would also be less than significant due to submarine deployment activities in limited near-shore 
+or inland bodies of water.  During operations, the new NPSBN is anticipated to improve 
+commercial telecommunication systems, communications, and level of service by expanding 
+telecommunications service areas.  
+Potential impacts to utilities during system deployment would be less than significant.  Such 
+potential impacts, if they occurred, would likely be temporary and minor. 
+Implementation of FirstNet public safety telecommunications infrastructure would likely 
+significantly improve public safety communications capabilities and response times in both 
+urban and rural areas during operations.  Upgrades to the current infrastructure during the 
+deployment phase could result in a temporary, likely minor disruption in emergency 
+communications, generally lasting only as long as it takes to connect and begin using the new 
+system.  It is anticipated that public safety communications interoperability, durability, and 
+resiliency would significantly improve during operation in comparison to existing conditions. 
+Although the individual states within the South Region each have some specific infrastructure 
+characteristics, as documented in the Final PEIS, the South Region as a whole demonstrates 
+characteristics of infrastructure common in the United States, and potential impacts would be 
+similar throughout the region.  Overall, the Preferred Alternative would have less than 
+significant, and oftentimes beneficial or positive, impact on existing and future infrastructure 
+throughout the South Region.  The Preferred Alternative would create improvements in overall 
+communications and response times, in both urban and rural areas across the region, and existing 
+deficiencies would be addressed in public safety communications interoperability, durability, and 
+resiliency.  As a result, the general effects on existing infrastructure and public safety in the 
+South Region would be considered less than significant (see Table ES5-1).
+
