@@ -1,10 +1,10 @@
 import os
 from dotenv import load_dotenv
 
-from self_route import SelfRoute
-from long_context import LongContext
-from vanilla_rag import VanillaRAG
-from enhanced_rag import EnhancedRAG
+from src.self_route import SelfRoute
+from src.long_context import LongContext
+from src.vanilla_rag import VanillaRAG
+from src.enhanced_rag import EnhancedRAG
 
 load_dotenv()
 
@@ -41,3 +41,20 @@ def long_context_rag(pdf_path: str, query: str):
     print('=' * 100)
 
     print(f"\n\nAnswer:\n{results.content}")
+
+# enhanced-RAG
+def enhanced_rag(pdf_path: str, query: str, preserve_order: bool = False):
+    enhanced_rag = EnhancedRAG(pdf_path, model_choices[MODEL_CHOICE], api_keys[MODEL_CHOICE], parent_model_choices[MODEL_CHOICE])
+
+    results = enhanced_rag.query(query, preserve_order=preserve_order)
+
+    print('=' * 100)
+    print(results)
+    print('=' * 100)
+    print('\n\n')
+
+    print(f"\n\nAnswer:\n{results['answer']}")
+
+
+enhanced_rag(PDF_PATH, QUERY, preserve_order=True)
+    

@@ -20,7 +20,8 @@ dependencies = [
     "langchain-google-vertexai (>=2.0.21,<3.0.0)",
     "langchain-chroma (>=0.2.3,<0.3.0)",
     "langchain-openai (>=0.3.14,<0.4.0)",
-    "pypdf2 (>=3.0.1,<4.0.0)"
+    "pypdf2 (>=3.0.1,<4.0.0)",
+    "rank-bm25 (>=0.2.2,<0.3.0)"
 ]
 
 
