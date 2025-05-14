@@ -5,6 +5,7 @@ from src.self_route import SelfRoute
 from src.long_context import LongContext
 from src.vanilla_rag import VanillaRAG
 from src.enhanced_rag import EnhancedRAG
+from src.hyde import HyDE
 
 load_dotenv()
 
@@ -14,7 +15,7 @@ api_keys = [os.getenv('OPENAI_API_KEY'), os.getenv('CLAUDE_API_KEY'), os.getenv(
 
 MODEL_CHOICE = 0
 PDF_PATH = 'tests/1682954_thesis_proposal.pdf'
-QUERY = 'Who is the first supervisor of the thesis?'
+QUERY = 'Which dataset or datasets will be used for evaluation?'
 
 # # vanilla-RAG
 def vanilla_rag(pdf_path: str, query: str):
@@ -56,5 +57,30 @@ def enhanced_rag(pdf_path: str, query: str, preserve_order: bool = False):
     print(f"\n\nAnswer:\n{results['answer']}")
 
 
-enhanced_rag(PDF_PATH, QUERY, preserve_order=True)
+# self-route
+def self_route(pdf_path: str, query: str):
+    self_route = SelfRoute(pdf_path, model_choices[MODEL_CHOICE], api_keys[MODEL_CHOICE], parent_model_choices[MODEL_CHOICE])
+
+    results, response_type = self_route.query(query)
+
+    print('=' * 100)
+    print(results)
+    print('=' * 100)
+
+    print(f"Response type: {response_type}")
+
+    print(f"\n\nAnswer:\n{results['answer']}")
+
+# Hypothetical Document Embedding
+def hyde(pdf_path: str, query: str):
+    hyde = HyDE(pdf_path, model_choices[MODEL_CHOICE], api_keys[MODEL_CHOICE], parent_model_choices[MODEL_CHOICE])
+
+    results = hyde.query(query)
     
+    print('=' * 100)
+    print(results)
+    print('=' * 100)
+
+    print(f"\n\nAnswer:\n{results['answer']}")
+
+hyde(PDF_PATH, QUERY)

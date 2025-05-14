@@ -30,7 +30,7 @@ class LongContext:
 
         # initialize the system prompt
         self.system_prompt = """
-        You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. If you don't know the answer, say "I don't know". Be concise and to the point.\n\n{context}
+        You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. Answer only based on the context. If you cannot answer based on the context, respond with "Out of context". Be concise and to the point.\n\n{context}
         """
 
     def __concate_docs(self):
