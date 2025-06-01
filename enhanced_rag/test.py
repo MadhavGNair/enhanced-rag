@@ -10,6 +10,3 @@ with open("tests/trimmed_eis_FirstNet.txt", "w") as f:
         f.write(f"Page {page_num + 1}:\n")
         f.write(doc.page_content)
         f.write("\n\n")
-
-
-

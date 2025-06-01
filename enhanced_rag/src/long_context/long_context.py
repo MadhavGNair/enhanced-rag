@@ -1,30 +1,34 @@
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_community.document_loaders import PyPDFLoader
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 
 
 class LongContext:
-    def __init__(self, pdf_path: str, model_name: str, api_key: str, parent_model: str = 'openai'):
+    def __init__(
+        self, pdf_path: str, model_name: str, api_key: str, parent_model: str = "openai"
+    ):
         # load and split the pdf
         self.pdf_path = pdf_path
         self.loader = PyPDFLoader(pdf_path)
         self.docs = self.loader.load()
 
         # initialize the model
-        if parent_model == 'openai':
+        if parent_model == "openai":
             self.model_name = model_name
             self.api_key = api_key
             self.llm = ChatOpenAI(model_name=self.model_name, api_key=self.api_key)
-        elif parent_model == 'anthropic':
+        elif parent_model == "anthropic":
             self.model_name = model_name
             self.api_key = api_key
             self.llm = ChatAnthropic(model=self.model_name, api_key=self.api_key)
-        elif parent_model == 'gemini':
+        elif parent_model == "gemini":
             self.model_name = model_name
             self.api_key = api_key
-            self.llm = ChatGoogleGenerativeAI(model=self.model_name, api_key=self.api_key)
+            self.llm = ChatGoogleGenerativeAI(
+                model=self.model_name, api_key=self.api_key
+            )
         else:
             raise ValueError(f"Invalid parent model: {parent_model}")
 
@@ -56,9 +60,11 @@ class LongContext:
             chain.invoke({"input": query, "context": context}): The answer to the query.
         """
         context = self.__concate_docs()
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", self.system_prompt),
-            ("user", "{input}"),
-        ])
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                ("system", self.system_prompt),
+                ("user", "{input}"),
+            ]
+        )
         chain = prompt | self.llm
         return chain.invoke({"input": query, "context": context})
