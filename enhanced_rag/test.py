@@ -1,12 +1,34 @@
-from langchain_community.document_loaders import PyPDFLoader
+import asyncio
+import os
 
-PDF_PATH = "tests/trimmed_eis_FirstNet.pdf"
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from ragas.dataset_schema import SingleTurnSample
+from ragas.llms import LangchainLLMWrapper
+from ragas.embeddings import LangchainEmbeddingsWrapper
+from ragas.metrics import LLMContextRecall, AnswerCorrectness, AnswerSimilarity
 
-loader = PyPDFLoader(PDF_PATH)
-docs = loader.load()
+load_dotenv()
 
-with open("tests/trimmed_eis_FirstNet.txt", "w") as f:
-    for page_num, doc in enumerate(docs):
-        f.write(f"Page {page_num + 1}:\n")
-        f.write(doc.page_content)
-        f.write("\n\n")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+evaluator_llm = LangchainLLMWrapper(
+    ChatOpenAI(model="gpt-4o-mini", api_key=OPENAI_API_KEY)
+)
+
+embeddings = LangchainEmbeddingsWrapper(
+    OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
+)
+
+sample = SingleTurnSample(
+    user_input="Why do we need water?",
+    response="The capital of India is Paris.",
+    reference="The capital of India is Paris.",
+)
+
+answer_correctness = AnswerCorrectness(llm=evaluator_llm, answer_similarity=AnswerSimilarity(embeddings=embeddings))
+result = asyncio.run(answer_correctness.single_turn_ascore(sample))
+print(result)
+
+# prompts = context_recall.get_prompts()
+# print(prompts)
