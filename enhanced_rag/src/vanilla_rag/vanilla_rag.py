@@ -11,7 +11,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class VanillaRAG:
     def __init__(
-        self, pdf_path: str, model_name: str, api_key: str, parent_model: str = "openai"
+        self, pdf_path: str, model_name: str, api_key: str, parent_model: str = "openai", system_prompt: str = None
     ):
         # load and split the pdf
         self.pdf_path = pdf_path
@@ -37,9 +37,12 @@ class VanillaRAG:
             raise ValueError(f"Invalid parent model: {parent_model}")
 
         # initialize the system prompt
-        self.system_prompt = """
-        You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. Answer only based on the context. If you cannot answer based on the context, respond with "Out of context". Be concise and to the point.\n\n{context}
-        """
+        if system_prompt is None:
+            self.system_prompt = """
+            You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. Answer only based on the context. If the question is a yes or no question, answer with only "yes" or "no" without any other text. Be concise and to the point.\n\n{context}
+            """
+        else:
+            self.system_prompt = system_prompt
 
     def __generate_embeddings(self):
         """

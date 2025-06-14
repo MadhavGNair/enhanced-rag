@@ -42,7 +42,7 @@ class HyDE:
 
         # initialize the system prompt
         self.system_prompt = """
-        You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. Answer only based on the context. If you cannot answer based on the context, respond with "Out of context". Be concise and to the point.\n\n{context}
+        You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. Answer only based on the context. If the question is a yes or no question, answer with only "yes" or "no" without any other text. Be concise and to the point.\n\n{context}
         """
 
         self.hyde_prompt = """
@@ -108,11 +108,11 @@ class HyDE:
 
         retrieved_documents = retriever.invoke(hypothetical_document)
 
-        print(f"Hypothetical document: \n\n{hypothetical_document}\n\n")
-        for doc in retrieved_documents:
-            print(f"Retrieved document: \n\n{doc.page_content}\n\n")
-        print("=" * 100)
-        print("\n\n")
+        # print(f"Hypothetical document: \n\n{hypothetical_document}\n\n")
+        # for doc in retrieved_documents:
+        #     print(f"Retrieved document: \n\n{doc.page_content}\n\n")
+        # print("=" * 100)
+        # print("\n\n")
 
         prompt = ChatPromptTemplate.from_messages(
             [

@@ -1,0 +1,67 @@
+[
+    {
+        "index": 0,
+        "pdf_name": "eis_Continental_United_States_Interceptor_Site",
+        "question": "Did the U.S. Fish and Wildlife Service participate in the EIS process for the FCTC sites?",
+        "question_type": "closed",
+        "answer": "yes",
+        "groundtruth_answer": "Yes",
+        "evaluation": {
+            "answer_correctness": 0.9754982697664896,
+            "context_recall": null,
+            "faithfulness": null
+        }
+    },
+    {
+        "index": 1,
+        "pdf_name": "eis_Continental_United_States_Interceptor_Site",
+        "question": "Did the EIS process for the CRJMTC site include participation from the Ohio Department of Education?",
+        "question_type": "closed",
+        "answer": "no",
+        "groundtruth_answer": "No",
+        "evaluation": {
+            "answer_correctness": 0.9739050111071823,
+            "context_recall": null,
+            "faithfulness": null
+        }
+    },
+    {
+        "index": 2,
+        "pdf_name": "eis_Continental_United_States_Interceptor_Site",
+        "question": "Was the Maine Historic Preservation Commission present during the EIS process for the SERE East Site on May 15, 2014?",
+        "question_type": "closed",
+        "answer": "yes",
+        "groundtruth_answer": "No",
+        "evaluation": {
+            "answer_correctness": 0.17215307616856856,
+            "context_recall": null,
+            "faithfulness": null
+        }
+    },
+    {
+        "index": 3,
+        "pdf_name": "eis_Continental_United_States_Interceptor_Site",
+        "question": "Was the U.S. Environmental Protection Agency present at the meetings for the FTD Site?",
+        "question_type": "closed",
+        "answer": "yes",
+        "groundtruth_answer": "Yes",
+        "evaluation": {
+            "answer_correctness": 0.9754982697664896,
+            "context_recall": null,
+            "faithfulness": null
+        }
+    },
+    {
+        "index": 4,
+        "pdf_name": "eis_Continental_United_States_Interceptor_Site",
+        "question": "Did formal consultations with regulatory agencies occur during the EIS process?",
+        "question_type": "closed",
+        "answer": "no",
+        "groundtruth_answer": "No",
+        "evaluation": {
+            "answer_correctness": 0.9739086301986071,
+            "context_recall": null,
+            "faithfulness": null
+        }
+    }
+]

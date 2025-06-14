@@ -6,7 +6,10 @@ class SelfRoute:
     def __init__(
         self, pdf_path: str, model_name: str, api_key: str, parent_model: str = "openai"
     ):
-        self.vanilla_rag = VanillaRAG(pdf_path, model_name, api_key, parent_model)
+        system_prompt = """
+            You are a helpful assistant that can answer questions about the document. Use the provided context to answer the question. Answer only based on the context. If you cannot answer based on the context, respond with "Out of context". If the question is a yes or no question, answer with only "yes" or "no" without any other text. Be concise and to the point.\n\n{context}
+        """
+        self.vanilla_rag = VanillaRAG(pdf_path, model_name, api_key, parent_model, system_prompt)
         self.long_context = LongContext(pdf_path, model_name, api_key, parent_model)
 
     def query(self, query: str):
