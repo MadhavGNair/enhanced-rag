@@ -160,7 +160,7 @@ def find_optimal_page_range(
 ) -> Tuple[Tuple[int, int], int, dict]:
     print("Finding optimal page range...")
     candidates = []
-    attempts = 10  # Reduced from 20 to 10
+    attempts = 5
     
     for _ in tqdm(range(attempts), desc="Trying page combinations"):
         pages_before = random.randint(0, min(max_pages_before, chunk_page))

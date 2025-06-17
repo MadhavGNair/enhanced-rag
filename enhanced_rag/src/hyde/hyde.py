@@ -20,6 +20,7 @@ class HyDE:
         self.pdf_path = pdf_path
         self.loader = PyPDFLoader(pdf_path)
         self.docs = self.loader.load()
+        self.vector_store = self.__generate_embeddings()
 
         # initialize the model
         self.parent_model = parent_model
@@ -99,10 +100,9 @@ class HyDE:
         Returns:
             chain.invoke({"input": query}): The answer to the query.
         """
-        vector_store = self.__generate_embeddings()
         hypothetical_document = self.__hyde(query)
 
-        retriever = vector_store.as_retriever(
+        retriever = self.vector_store.as_retriever(
             search_type="similarity", search_kwargs={"k": 3}
         )
 

@@ -27,6 +27,9 @@ class EnhancedRAG:
         # initialize the embeddings
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
+        self.semantic_retriever = self.__initialize_semantic_retriever()
+        self.bm25_retriever = self.__initialize_BM25_retriever()
+        
         # initialize the model
         if parent_model == "openai":
             self.model_name = model_name
@@ -93,10 +96,8 @@ class EnhancedRAG:
         Returns:
             dict: The LLM response with answer and retrieved context.
         """
-        semantic_retriever = self.__initialize_semantic_retriever()
-        bm25_retriever = self.__initialize_BM25_retriever()
         ensemble_retriever = EnsembleRetriever(
-            retrievers=[semantic_retriever, bm25_retriever],
+            retrievers=[self.semantic_retriever, self.bm25_retriever],
             weights=[0.6, 0.4],
         )
 

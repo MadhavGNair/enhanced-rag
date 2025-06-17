@@ -17,6 +17,7 @@ class VanillaRAG:
         self.pdf_path = pdf_path
         self.loader = PyPDFLoader(pdf_path)
         self.docs = self.loader.load()
+        self.retriever = self.__generate_embeddings()
 
         # initialize the model
         if parent_model == "openai":
@@ -73,7 +74,6 @@ class VanillaRAG:
         Returns:
             chain.invoke({"input": query}): The answer to the query.
         """
-        retriever = self.__generate_embeddings()
         prompt = ChatPromptTemplate.from_messages(
             [
                 ("system", self.system_prompt),
@@ -84,5 +84,5 @@ class VanillaRAG:
             llm=self.llm,
             prompt=prompt,
         )
-        chain = create_retrieval_chain(retriever, q_and_a_chain)
+        chain = create_retrieval_chain(self.retriever, q_and_a_chain)
         return chain.invoke({"input": query})
