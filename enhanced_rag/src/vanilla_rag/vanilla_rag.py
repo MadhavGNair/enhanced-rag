@@ -1,3 +1,6 @@
+import hashlib
+import os
+
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_anthropic import ChatAnthropic
@@ -11,12 +14,18 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class VanillaRAG:
     def __init__(
-        self, pdf_path: str, model_name: str, api_key: str, parent_model: str = "openai", system_prompt: str = None
+        self, pdf_path: str, model_name: str, api_key: str, parent_model: str = "openai", system_prompt: str = None, collection_prefix: str = "vanilla_rag"
     ):
         # load and split the pdf
         self.pdf_path = pdf_path
         self.loader = PyPDFLoader(pdf_path)
-        self.docs = self.loader.load()
+        self.docs = self.loader.load_and_split()
+        
+        # Store the API keys for embeddings
+        self.api_key = api_key
+        self.parent_model = parent_model
+        self.collection_prefix = collection_prefix
+        
         self.retriever = self.__generate_embeddings()
 
         # initialize the model
@@ -56,12 +65,24 @@ class VanillaRAG:
             chunk_size=1000, chunk_overlap=200
         )
         chunks = text_splitter.split_documents(self.docs)
+        
+        # Always use OpenAI API key for embeddings, regardless of LLM choice
+        openai_api_key = self.api_key if self.parent_model == "openai" else os.getenv("OPENAI_API_KEY")
+        
+        # create a unique collection name to prevent interference between frameworks
+        pdf_hash = hashlib.md5(self.pdf_path.encode()).hexdigest()[:8]
+        collection_name = f"{self.collection_prefix}_{pdf_hash}"
+        
         vector_store = Chroma.from_documents(
             documents=chunks,
-            embedding=OpenAIEmbeddings(model="text-embedding-3-small"),
+            embedding=OpenAIEmbeddings(
+                model="text-embedding-3-small",
+                api_key=openai_api_key
+            ),
+            collection_name=collection_name,
         )
         return vector_store.as_retriever(
-            serach_type="similarity", search_kwargs={"k": 3}
+            search_type="similarity", search_kwargs={"k": 3}
         )
 
     def query(self, query: str):

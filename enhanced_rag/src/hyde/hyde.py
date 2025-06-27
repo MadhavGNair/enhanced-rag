@@ -1,3 +1,4 @@
+import hashlib
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_anthropic import ChatAnthropic
@@ -61,9 +62,15 @@ class HyDE:
             chunk_size=1000, chunk_overlap=200
         )
         chunks = text_splitter.split_documents(self.docs)
+        
+        # create a unique collection name to prevent interference between frameworks
+        pdf_hash = hashlib.md5(self.pdf_path.encode()).hexdigest()[:8]
+        collection_name = f"hyde_{pdf_hash}"
+        
         vector_store = Chroma.from_documents(
             documents=chunks,
             embedding=OpenAIEmbeddings(model="text-embedding-3-small"),
+            collection_name=collection_name,
         )
         return vector_store
 
@@ -125,4 +132,9 @@ class HyDE:
             prompt=prompt,
         )
         chain = create_retrieval_chain(retriever, q_and_a_chain)
-        return chain.invoke({"input": query, "context": retrieved_documents})
+        result = chain.invoke({"input": query, "context": retrieved_documents})
+        
+        # Add hypothetical document to the response
+        result["hypothetical_document"] = hypothetical_document
+        
+        return result

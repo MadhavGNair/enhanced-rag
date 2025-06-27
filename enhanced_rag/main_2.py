@@ -7,10 +7,9 @@ from tqdm import tqdm
 
 import pandas as pd
 from dotenv import load_dotenv
-from src.enhanced_rag import EnhancedRAG
 from src.evaluation.evaluator import Evaluator
+from src.enhanced_rag import EnhancedRAG
 from src.hyde import HyDE
-from src.long_context import LongContext
 from src.self_route import SelfRoute
 from src.vanilla_rag import VanillaRAG
 
@@ -29,12 +28,6 @@ ROOT_PATH = r"D:\madhav\university\thesis\enhanced-rag\dataset\llm-for-environme
 
 def initialize_frameworks(pdf_path):
     vanilla_rag = VanillaRAG(
-        pdf_path,
-        model_choices[MODEL_CHOICE],
-        api_keys[MODEL_CHOICE],
-        parent_model_choices[MODEL_CHOICE],
-    )
-    long_context = LongContext(
         pdf_path,
         model_choices[MODEL_CHOICE],
         api_keys[MODEL_CHOICE],
@@ -59,7 +52,7 @@ def initialize_frameworks(pdf_path):
         parent_model_choices[MODEL_CHOICE],
     )
 
-    return vanilla_rag, long_context, enhanced_rag, self_route, hyde
+    return vanilla_rag, enhanced_rag, self_route, hyde
 
 
 async def evaluate_results(response_dict: dict, framework: str):
@@ -91,20 +84,19 @@ def extract_yes_no(response):
 def load_existing_results():
     results = {
         "vanilla_rag": [],
-        "long_context": [],
         "enhanced_rag": [],
         "self_route": [],
         "hyde": [],
     }
     
-    # Create results directory if it doesn't exist
-    if not os.path.exists("results"):
-        os.makedirs("results")
+    # Create results/new_results directory if it doesn't exist
+    if not os.path.exists("results/new_results"):
+        os.makedirs("results/new_results")
         return results
     
     # Load existing results if they exist
     for key in results.keys():
-        file_path = f"results/{key}.json"
+        file_path = f"results/new_results/{key}.json"
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
                 results[key] = json.load(f)
@@ -114,7 +106,7 @@ def load_existing_results():
 def save_results(results):
     for key, value in results.items():
         serializable_value = convert_to_serializable(value)
-        with open(f"results/{key}.json", "w", encoding="utf-8") as f:
+        with open(f"results/new_results/{key}.json", "w", encoding="utf-8") as f:
             json.dump(serializable_value, f, ensure_ascii=False, indent=4)
 
 
@@ -134,7 +126,7 @@ if __name__ == "__main__":
         pdf_path = os.path.join(ROOT_PATH, pdf_name + ".pdf")
 
         # initialize frameworks
-        vanilla_rag, long_context, enhanced_rag, self_route, hyde = initialize_frameworks(pdf_path)
+        vanilla_rag, enhanced_rag, self_route, hyde = initialize_frameworks(pdf_path)
 
         # get subset of data for the current pdf
         subset_data = data[data["EIS_filename"] == pdf_name]
@@ -151,15 +143,11 @@ if __name__ == "__main__":
             groundtruth_answer = row["groundtruth_answer"]
             groundtruth_context = row["context"]
 
-            # Run all frameworks and collect responses
+            # Run frameworks and collect responses
             start_time = time.time()
             vanilla_rag_response = vanilla_rag.query(question)
             vanilla_time = time.time() - start_time
-
-            start_time = time.time()
-            long_context_response = long_context.query(question)
-            long_context_time = time.time() - start_time
-
+            
             start_time = time.time()
             enhanced_rag_response = enhanced_rag.query(question)
             enhanced_time = time.time() - start_time
@@ -195,22 +183,6 @@ if __name__ == "__main__":
                     "faithfulness": None,
                 },
                 "execution_time": vanilla_time,
-            }
-
-            long_context_results = {
-                "index": index,
-                "ID": row_id,
-                "pdf_name": pdf_name,
-                "question": question,
-                "question_type": question_type,
-                "answer": long_context_response.content,
-                "groundtruth_answer": groundtruth_answer,
-                "evaluation": {
-                    "answer_correctness": None,
-                    "context_recall": None,
-                    "faithfulness": None,
-                },
-                "execution_time": long_context_time,
             }
 
             enhanced_rag_results = {
@@ -308,14 +280,12 @@ if __name__ == "__main__":
             # post-process the responses
             if question_type == "closed":
                 vanilla_rag_results["answer"] = extract_yes_no(vanilla_rag_results["answer"])
-                long_context_results["answer"] = extract_yes_no(long_context_results["answer"])
                 enhanced_rag_results["answer"] = extract_yes_no(enhanced_rag_results["answer"])
                 self_route_results["answer"] = extract_yes_no(self_route_results["answer"])
                 hyde_results["answer"] = extract_yes_no(hyde_results["answer"])
 
             eval_results = {
                 "vanilla_rag": vanilla_rag_results,
-                "long_context": long_context_results,
                 "enhanced_rag": enhanced_rag_results,
                 "self_route": self_route_results,
                 "hyde": hyde_results,
@@ -332,7 +302,6 @@ if __name__ == "__main__":
 
             # save the results after each question
             results["vanilla_rag"].append(vanilla_rag_results)
-            results["long_context"].append(long_context_results)
             results["enhanced_rag"].append(enhanced_rag_results)
             results["self_route"].append(self_route_results)
             results["hyde"].append(hyde_results)

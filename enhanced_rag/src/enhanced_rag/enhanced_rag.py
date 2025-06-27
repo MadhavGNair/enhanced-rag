@@ -1,3 +1,4 @@
+import hashlib
 from typing import List
 
 from langchain.chains import create_retrieval_chain
@@ -64,12 +65,18 @@ class EnhancedRAG:
             chunk_size=1000, chunk_overlap=200
         )
         chunks = text_splitter.split_documents(self.docs)
+        
+        # create a unique collection name to prevent interference between frameworks
+        pdf_hash = hashlib.md5(self.pdf_path.encode()).hexdigest()[:8]
+        collection_name = f"enhanced_rag_{pdf_hash}"
+        
         vector_store = Chroma.from_documents(
             documents=chunks,
             embedding=self.embeddings,
+            collection_name=collection_name,
         )
         return vector_store.as_retriever(
-            serach_type="similarity", search_kwargs={"k": 3}
+            search_type="similarity", search_kwargs={"k": 3}
         )
 
     def __initialize_BM25_retriever(self):
