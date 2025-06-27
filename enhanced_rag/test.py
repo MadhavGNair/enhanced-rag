@@ -1,30 +1,13 @@
-import json
-from pprint import pprint
-import os
-from tqdm import tqdm
+import pandas as pd
 
-frameworks = ['enhanced_rag', 'hyde', 'long_context', 'self_route', 'vanilla_rag']
+df = pd.read_csv('results/statistical_analysis/raw_data.csv')
 
-# Create the target directory if it doesn't exist
-os.makedirs('results/gpt_evaluation', exist_ok=True)
+df = df[df['framework'] == 'enhanced_rag'].drop(columns=['response_type'])
 
-for framework in tqdm(frameworks, desc="Processing frameworks", position=0):
-    with open(f'results/{framework}.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    processed_results = []
-    for item in tqdm(data, desc=f"Processing {framework}", position=1, leave=False):
-        result = {
-            "index": item['index'],
-            "ID": item['ID'],
-            "evaluation": item['evaluation']
-        }
-        processed_results.append(result)
-    
-    # Save the processed results to a new JSON file
-    output_file = f'results/gpt_evaluation/{framework}.json'
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(processed_results, f, indent=2, ensure_ascii=False)
-    print(f'Saved processed results to {output_file}')
+# Convert float columns to strings with double quotes
+for col in ['answer_correctness', 'context_recall', 'faithfulness']:
+    df[col] = df[col].astype(str).str.replace(r'^(\d+\.?\d*)$', r'"\1"', regex=True)
 
-        
+# Save to CSV with framework name as filename
+df.to_csv('results/statistical_analysis/enhanced_rag.csv', index=False)
+

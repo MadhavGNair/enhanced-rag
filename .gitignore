@@ -163,3 +163,4 @@ todo.txt
 tests/*.pdf
 dataset/llm-for-environmental-review/pdfs_train/trimmed/*.pdf
 results/
+*.txt
